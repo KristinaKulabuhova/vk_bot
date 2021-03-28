@@ -13,10 +13,7 @@ import logger
 
 list_of_users = []
 token = ''
-group_932 = []
-group_Kr = []
 id_headman = 0
-id_Kristina = 0
 
 vk_session = vk_api.VkApi(token=token)
 session_api = vk_session.get_api()
@@ -65,18 +62,18 @@ lessons=\
                      lesson(time=time(12, 20, 00), room='УЛК_2 №424',      name='ТиПМС',                                link= None),
                      lesson(time=time(17, 5, 00),  room='УЛК_2 №418-419',  name='Базы данных',                          link= None)],
              Weekdays.THU: 
-                    [lesson(time=time(9, 00, 00),  room='202 НК',          name='Гармонический анализ. Лекция',         link= "https://www.youtube.com/channel/UCdxesVp6Fs7wLpnp1XKkvZg"),
-                     lesson(time=time(13, 55, 00), room='113 ГК',          name='Дискретные структуры. Лекция',         link= "https://www.youtube.com/channel/UCdxesVp6Fs7wLpnp1XKkvZg")],
+                    [lesson(time=time(9, 00, 00),  room='202 НК',          name='Гармонический анализ. Лекция',         link= ""),
+                     lesson(time=time(13, 55, 00), room='113 ГК',          name='Дискретные структуры. Лекция',         link= "")],
              Weekdays.FRI: 
                     [lesson(time=time(9, 00, 00),  room='УЛК_1 №2.36',     name='Практика на С++',                      link= None),
                      lesson(time=time(12, 20, 00), room='512 ГК',          name='Теория вероятностей',                  link= None),
                      lesson(time=time(13, 55, 00), room='НК',              name='Иностранный язык',                     link= None),
                      lesson(time=time(17, 5, 00),  room='518 ГК',          name='Дискретные структуры',                 link= None)],
              Weekdays.SAT: 
-                    [lesson(time=time(9, 00, 00),  room='(без аудитории)', name='Дифференциальные уравнения. Лекция',   link= "https://meet.google.com/gmx-awhz-yqp"),
-                     lesson(time=time(10, 45, 00), room='(без аудитории)', name='Теория вероятностей. Лекция',          link= "https://us02web.zoom.us/j/89546477183?pwd=bUxkTzErcHRUdkZSbVlyVkI5KytLQT09"),
-                     lesson(time=time(12, 20, 00), room='(без аудитории)', name='ТиПМС. Лекция',                        link= "https://zoom.us/j/94383820986?pwd=aFN2RGdzVWRFeHBWMDZ0cnJ5enFKQT09"),
-                     lesson(time=time(13, 55, 00), room='(без аудитории)', name='Базы данных. Лекция',                  link= "https://zoom.us/j/93720449525?pwd=M1JJa0o2WkFBU1dLdlUrTzJHL1VpQT09"),
+                    [lesson(time=time(9, 00, 00),  room='(без аудитории)', name='Дифференциальные уравнения. Лекция',   link= ""),
+                     lesson(time=time(10, 45, 00), room='(без аудитории)', name='Теория вероятностей. Лекция',          link= ""),
+                     lesson(time=time(12, 20, 00), room='(без аудитории)', name='ТиПМС. Лекция',                        link= ""),
+                     lesson(time=time(13, 55, 00), room='(без аудитории)', name='Базы данных. Лекция',                  link= ""),
                      lesson(time=time(16, 30, 00), room='(без аудитории)', name='Введение в анализ данных. Лекция',     link= None)],
              Weekdays.SUN: []}
 
@@ -123,7 +120,7 @@ def create_menu():
     keyboard.add_line()
     keyboard.add_button(label='Ближайшая пара', color=VkKeyboardColor.POSITIVE)
     keyboard.add_line()
-    keyboard.add_openlink_button(label='Полезные материалы', link="https://drive.google.com/drive/folders/1H7jYyMx5fR7wAt6kDrakeFneDmGpru3O")
+    keyboard.add_openlink_button(label='Полезные материалы', link="")
 
     return keyboard.get_keyboard()
 
